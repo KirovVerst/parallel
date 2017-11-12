@@ -42,3 +42,33 @@ Message size : 2000	Rank 0 time: 29.5346
 Message size : 2000	Rank 1 time: 29.5346
 Message size : 5000	Rank 0 time: 64.0687
 Message size : 5000	Rank 1 time: 64.0687
+
+Bsend Recv methods
+
+Message size : 1	Rank 0 time: 1.80476
+Message size : 1	Rank 1 time: 1.80476
+Message size : 10	Rank 0 time: 1.8465
+Message size : 10	Rank 1 time: 1.8465
+Message size : 100	Rank 0 time: 3.06469
+Message size : 100	Rank 1 time: 3.06469
+Message size : 1000	Rank 0 time: 10.1596
+Message size : 1000	Rank 1 time: 10.1596
+Message size : 2000	Rank 0 time: 21.2121
+Message size : 2000	Rank 1 time: 21.2121
+Message size : 5000	Rank 0 time: 36.9287
+Message size : 5000	Rank 1 time: 36.9287
+
+Send/Recv Combined method
+
+Message size : 1	Rank 0 time: 1.89159
+Message size : 1	Rank 1 time: 1.89159
+Message size : 10	Rank 0 time: 1.97757
+Message size : 10	Rank 1 time: 1.97757
+Message size : 100	Rank 0 time: 3.25748
+Message size : 100	Rank 1 time: 3.25748
+Message size : 1000	Rank 0 time: 9.84991
+Message size : 1000	Rank 1 time: 9.84991
+Message size : 2000	Rank 0 time: 19.9033
+Message size : 2000	Rank 1 time: 19.9033
+Message size : 5000	Rank 0 time: 32.4337
+Message size : 5000	Rank 1 time: 32.4337
