@@ -73,3 +73,5 @@ dkms.conf
 .idea
 id_rsa.pub
 id_rsa
+
+.vagrant
