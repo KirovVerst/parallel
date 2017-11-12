@@ -1,0 +1,11 @@
+Send Recv methods
+
+Message size : 1	Rank 0 time: 3.18241
+Message size : 1	Rank 1 time: 3.18241
+Message size : 10	Rank 0 time: 3.42544
+Message size : 10	Rank 1 time: 3.42544
+Message size : 100	Rank 0 time: 6.16632
+Message size : 100	Rank 1 time: 6.16632
+Message size : 1000	Rank 0 time: 16.7498
+Message size : 1000	Rank 1 time: 16.7498
+

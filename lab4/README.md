@@ -1,38 +1,12 @@
-# MPI Cluster Vagrantfile
+# Comparision different methods of message passing in MPI
 
-This is a Vagrantfile (to be used with HashiCorp's
-[Vagrant](https://vagrantcloud.com/) tool) for automatically bringing up
-a cluster suitable for testing MPI loads.
+## Blocking methods
 
-Practically, all this involves is bringing up several VMs on a private network,
-setting up SSH key-based authentication between them, and installing OpenMPI.
+MPI_Send, MPI_Ssend, MPI_Bsend, MPI_Rsend
 
-Currently only works with the VirtualBox provider.
+## Non-blocking methods 
 
-## Usage
+MPI_Isend, MPI_Issend, MPI_Ibsend, MPI_Irsend
 
-In your checkout directory, simply run:
-```
-$ vagrant up
-```
-By default, the cluster will be made of 3 VMs. If you want more,
-change `N_VMS` in the `Vagrantfile`.
-
-The VMs will be named `node1` through `node<n>`. To SSH to, say, `node1`:
-```
-$ vagrant ssh node1
-```
-
-As a simple sanity check, try running `hostname` on each machine in the
-cluster:
-```
-vagrant@node1:~$ mpirun -np 3 --host node1,node2,node3 hostname
-```
-Note that OpenMPI will try to use all networks it thinks are common
-to all hosts for any inter-node communication, including Vagrant's
-host-only networks. To work around this, you should tell `mpirun` explicitly
-which networks to use:
-```
-vagrant@node1:~$ mpirun -np 3 --host node1,node2,node3 --mca btl_tcp_if_include 192.168.0.0/24 hostname
-```
-For more detail, see http://www.open-mpi.org/faq/?category=tcp#tcp-selection.
+## Combined Send/Receive
+MPI_Sendrecv
