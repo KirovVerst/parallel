@@ -202,7 +202,7 @@ void matrix_task_run() {
     for (dlong &matrix_size: MATRIX_SIZES) {
         cout << "Matrix size: " << matrix_size << " x " << matrix_size << endl;
         serial_process_matrix(matrix, matrix_size);
-        for (int thread_num = 2; thread_num <= MAX_THREAD_NUMBER; thread_num++) {
+        for (int thread_num = 1; thread_num <= MAX_THREAD_NUMBER; thread_num++) {
             parallel_process_matrix(matrix, matrix_size, thread_num);
         }
         cout << endl;

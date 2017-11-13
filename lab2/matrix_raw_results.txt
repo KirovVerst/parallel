@@ -1,29 +1,32 @@
 Matrix size: 1000 x 1000
-1 threads time: 0.009142041001
-2 threads time: 0.005930665
-3 threads time: 0.004059246001
-4 threads time: 0.003131023999
-5 threads time: 0.004453852
-6 threads time: 0.003711362999
-7 threads time: 0.003199748999
-8 threads time: 0.002811988999
+1 threads time: 0.009094169996
+1 threads time: 0.010961656
+2 threads time: 0.005945774006
+3 threads time: 0.004012079
+4 threads time: 0.003122930997
+5 threads time: 0.004498249
+6 threads time: 0.003718801003
+7 threads time: 0.003268212
+8 threads time: 0.009126299999
 
 Matrix size: 10000 x 10000
-1 threads time: 0.895616173
-2 threads time: 0.572642652
-3 threads time: 0.392406134
-4 threads time: 0.307414289
-5 threads time: 0.35274409
-6 threads time: 0.321014983
-7 threads time: 0.312529039
-8 threads time: 0.292070283
+1 threads time: 0.903516552
+1 threads time: 1.079449305
+2 threads time: 0.576963793
+3 threads time: 0.392820228
+4 threads time: 0.308453147
+5 threads time: 0.363717311
+6 threads time: 0.32325285
+7 threads time: 0.316934015
+8 threads time: 0.289197441
 
 Matrix size: 50000 x 50000
-1 threads time: 24.5185573
-2 threads time: 14.90302109
-3 threads time: 10.29478598
-4 threads time: 7.940025071
-5 threads time: 8.883285746
-6 threads time: 7.59217322
-7 threads time: 7.408200395
-8 threads time: 7.102650058
+1 threads time: 24.63628621
+1 threads time: 28.15840087
+2 threads time: 14.9149519
+3 threads time: 10.29184008
+4 threads time: 7.856897415
+5 threads time: 8.871606912
+6 threads time: 7.590775394
+7 threads time: 7.368625592
+8 threads time: 7.248813498
