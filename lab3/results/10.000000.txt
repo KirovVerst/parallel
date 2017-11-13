@@ -1,0 +1,46 @@
+
+A = 10 	B = 100	Eps = 1e-05
+
+Real value: 0.000332334
+
+1 threads' time: 1.2299e-05
+
+<----------Reduction method---------->
+2 threads' time: 0.000449787
+3 threads' time: 9.8729e-05
+4 threads' time: 4.7402e-05
+5 threads' time: 2.4822e-05
+6 threads' time: 5.138e-05
+7 threads' time: 1.8895e-05
+8 threads' time: 0.000125694
+Step number: 128
+
+<----------Atomic method---------->
+2 threads' time: 2.3109e-05
+3 threads' time: 4.6679e-05
+4 threads' time: 4.8283e-05
+5 threads' time: 2.9624e-05
+6 threads' time: 5.5309e-05
+7 threads' time: 0.00317286
+8 threads' time: 4.1138e-05
+Step number: 128
+
+<----------Critical method---------->
+2 threads' time: 2.2829e-05
+3 threads' time: 8.7035e-05
+4 threads' time: 4.1102e-05
+5 threads' time: 5.2205e-05
+6 threads' time: 3.8655e-05
+7 threads' time: 4.6828e-05
+8 threads' time: 5.1059e-05
+Step number: 128
+
+<----------Locks method---------->
+2 threads' time: 2.3748e-05
+3 threads' time: 3.2682e-05
+4 threads' time: 3.9925e-05
+5 threads' time: 4.3492e-05
+6 threads' time: 4.4217e-05
+7 threads' time: 5.7367e-05
+8 threads' time: 6.0661e-05
+Step number: 128
