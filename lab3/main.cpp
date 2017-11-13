@@ -8,6 +8,16 @@ using namespace std;
 
 typedef pair<double, double> Points;
 
+Points POINTS[]{
+        make_pair(1e-5, 1e-4),
+        make_pair(1e-4, 1e-3),
+        make_pair(1e-3, 1e-2),
+        make_pair(1e-2, 1e-1),
+        make_pair(1e-1, 1),
+        make_pair(1, 10),
+        make_pair(10, 100)
+};
+
 int MAX_THREAD_NUMBER = omp_get_max_threads();
 
 void parallel_implementations(Points &dots, double eps, ofstream &out) {
@@ -48,19 +58,11 @@ void parallel_implementations(Points &dots, double eps, ofstream &out) {
 
 
 void run_own_experiment() {
-    Points points[]{
-            make_pair(1e-5, 1e-4),
-            make_pair(1e-4, 1e-3),
-            make_pair(1e-3, 1e-2),
-            make_pair(1e-2, 1e-1),
-            make_pair(1e-1, 1),
-            make_pair(1, 10),
-            make_pair(10, 100)
-    };
+
     double eps = 1e-5;
     Result result;
 
-    for (Points &dots: points) {
+    for (Points &dots: POINTS) {
         cout << endl << dots.first << " " << dots.second << endl;
 
         ofstream log_file;
@@ -76,10 +78,27 @@ void run_own_experiment() {
     }
 }
 
+void run_task() {
+    int n = 7;
+    double a[] = {1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1, 10};
+    double b[] = {1e-4, 1e-3, 1e-2, 1e-1, 1, 10, 100};
+    double eps[] = {2.77e-11, 1.9e-10, 2.05e-11, 2.22e-12, 8.67e-11, 6e-11, 6.3e-11};
+
+    cout << "Atomic" << endl;
+
+    for (int i = 1; i < n; i++) {
+        double current_eps = eps[i];
+        cout << "a = " << a[i] << " b = " << b[i] << " eps = " << current_eps << endl;
+        Result result = atomic_implementation_for_task(a[i], b[i], current_eps, 8);
+        result.show();
+        cout << endl;
+    }
+}
+
 int main() {
     cout.precision(15);
 
-    run_own_experiment();
+    run_task();
 
     return 0;
 }

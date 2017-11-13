@@ -1,0 +1,28 @@
+Atomic
+a = 1e-05 b = 0.0001 eps = 2.77e-07
+8 threads' time: 55.6400084870038
+Number of steps: 268435456 result : 45000.1633590859
+
+a = 0.0001 b = 0.001 eps = 1.9e-10
+8 threads' time: 14.3293123769981
+Number of steps: 67108864 result : 4500.08701377184
+
+a = 0.001 b = 0.01 eps = 2.05e-11
+8 threads' time: 14.3092318400013
+Number of steps: 67108864 result : 449.549165800859
+
+a = 0.01 b = 0.1 eps = 2.22e-12
+8 threads' time: 14.342098000001
+Number of steps: 67108864 result : 45.44656063698
+
+a = 0.1 b = 1 eps = 8.67e-11
+8 threads' time: 0.908486849999463
+Number of steps: 4194304 result : 4.49908804406117
+
+a = 1 b = 10 eps = 6e-11
+8 threads' time: 0.430360571001074
+Number of steps: 2097152 result : 0.272342975995905
+
+a = 10 b = 100 eps = 6.3e-11
+8 threads' time: 0.445550454001932
+Number of steps: 2097152 result : 0.000332333974574094

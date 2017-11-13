@@ -1,0 +1,28 @@
+Serial
+a = 1e-05 b = 0.0001 eps = 2.77e-11
+1 threads' time: 16.3645044709992
+Number of steps: 134217728 result : 45000.1633588933
+
+a = 0.0001 b = 0.001 eps = 1.9e-10
+1 threads' time: 8.17991649299802
+Number of steps: 67108864 result : 4500.0870137708
+
+a = 0.001 b = 0.01 eps = 2.05e-11
+1 threads' time: 8.14791970599617
+Number of steps: 67108864 result : 449.549165800828
+
+a = 0.01 b = 0.1 eps = 2.22e-12
+1 threads' time: 8.09371726799873
+Number of steps: 67108864 result : 45.4465606369805
+
+a = 0.1 b = 1 eps = 8.67e-11
+1 threads' time: 0.433542040998873
+Number of steps: 4194304 result : 4.49908804406196
+
+a = 1 b = 10 eps = 6e-11
+1 threads' time: 0.188154447998386
+Number of steps: 2097152 result : 0.272342975995911
+
+a = 10 b = 100 eps = 6.3e-11
+1 threads' time: 0.185441134999564
+Number of steps: 2097152 result : 0.000332333974574105

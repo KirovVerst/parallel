@@ -31,11 +31,13 @@ struct Result {
 
     void show() {
         cout << thread_number << " threads' time: " << time << endl;
-        //cout << "Number of steps: " << step_number << " result : " << result << endl;
+        cout << "Number of steps: " << step_number << " result : " << result << endl;
     }
 };
 
 Result serial_implementation(double a, double b, double eps);
+
+Result serial_implementation_for_task(double a, double b, double eps);
 
 Result reduction_implementation(double a, double b, double eps, int thread_number);
 
@@ -44,5 +46,14 @@ Result atomic_implementation(double a, double b, double eps, int thread_number);
 Result critical_implementation(double a, double b, double eps, int thread_number);
 
 Result locks_implementation(double a, double b, double eps, int thread_number);
+
+Result reduction_implementation_for_task(double a, double b, double eps, int thread_number);
+
+Result atomic_implementation_for_task(double a, double b, double eps, int thread_number);
+
+Result critical_implementation_for_task(double a, double b, double eps, int thread_number);
+
+Result locks_implementation_for_task(double a, double b, double eps, int thread_number);
+
 
 #endif //LAB3_IMPLEMENTATIONS_H

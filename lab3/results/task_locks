@@ -1,0 +1,28 @@
+Locks
+a = 1e-05 b = 0.0001 eps = 2.77e-11
+8 threads' time: 50.1380795139994
+Number of steps: 134217728 result : 45000.163358896
+
+a = 0.0001 b = 0.001 eps = 1.9e-10
+8 threads' time: 23.3999102539965
+Number of steps: 67108864 result : 4500.08701377215
+
+a = 0.001 b = 0.01 eps = 2.05e-11
+8 threads' time: 23.936249174003
+Number of steps: 67108864 result : 449.549165800693
+
+a = 0.01 b = 0.1 eps = 2.22e-12
+8 threads' time: 24.1360322370019
+Number of steps: 67108864 result : 45.4465606369686
+
+a = 0.1 b = 1 eps = 8.67e-11
+8 threads' time: 1.40761010000278
+Number of steps: 4194304 result : 4.49908804406192
+
+a = 1 b = 10 eps = 6e-11
+8 threads' time: 0.642162666998047
+Number of steps: 2097152 result : 0.272342975995922
+
+a = 10 b = 100 eps = 6.3e-11
+8 threads' time: 0.640783171998919
+Number of steps: 2097152 result : 0.000332333974574081

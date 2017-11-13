@@ -1,0 +1,27 @@
+a = 1e-05 b = 0.0001 eps = 2.77e-11
+8 threads' time: 2.82026459299959
+Number of steps: 134217728 result : 45000.1633588995
+
+a = 0.0001 b = 0.001 eps = 1.9e-10
+8 threads' time: 1.41082762500446
+Number of steps: 67108864 result : 4500.08701377307
+
+a = 0.001 b = 0.01 eps = 2.05e-11
+8 threads' time: 1.39928353399591
+Number of steps: 67108864 result : 449.549165800996
+
+a = 0.01 b = 0.1 eps = 2.22e-12
+8 threads' time: 1.3658191450013
+Number of steps: 67108864 result : 45.4465606369739
+
+a = 0.1 b = 1 eps = 8.67e-11
+8 threads' time: 0.0781780469988007
+Number of steps: 4194304 result : 4.49908804406182
+
+a = 1 b = 10 eps = 6e-11
+8 threads' time: 0.0439436000015121
+Number of steps: 2097152 result : 0.272342975995919
+
+a = 10 b = 100 eps = 6.3e-11
+8 threads' time: 0.0268321949988604
+Number of steps: 2097152 result : 0.000332333974574075
