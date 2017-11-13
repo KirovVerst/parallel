@@ -1,0 +1,29 @@
+Matrix size: 1000 x 1000
+1 threads time: 0.009142041001
+2 threads time: 0.005930665
+3 threads time: 0.004059246001
+4 threads time: 0.003131023999
+5 threads time: 0.004453852
+6 threads time: 0.003711362999
+7 threads time: 0.003199748999
+8 threads time: 0.002811988999
+
+Matrix size: 10000 x 10000
+1 threads time: 0.895616173
+2 threads time: 0.572642652
+3 threads time: 0.392406134
+4 threads time: 0.307414289
+5 threads time: 0.35274409
+6 threads time: 0.321014983
+7 threads time: 0.312529039
+8 threads time: 0.292070283
+
+Matrix size: 50000 x 50000
+1 threads time: 24.5185573
+2 threads time: 14.90302109
+3 threads time: 10.29478598
+4 threads time: 7.940025071
+5 threads time: 8.883285746
+6 threads time: 7.59217322
+7 threads time: 7.408200395
+8 threads time: 7.102650058
