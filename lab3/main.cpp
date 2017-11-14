@@ -88,7 +88,7 @@ void run_task() {
 
     cout << "Critical" << endl;
 
-    for (int i = 1; i < n; i++) {
+    for (int i = 0; i < 1; i++) {
         double current_eps = eps[i];
         cout << "a = " << a[i] << " b = " << b[i] << " eps = " << current_eps << endl;
         Result result = critical_implementation_for_task(a[i], b[i], current_eps, 8);

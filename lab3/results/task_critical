@@ -1,4 +1,8 @@
 Critical
+a = 1e-05 b = 0.0001 eps = 2.77e-11
+8 threads' time: 38.5991042800015
+Number of steps: 134217728 result : 45000.1633588884
+
 a = 0.0001 b = 0.001 eps = 1.9e-10
 8 threads' time: 19.3396892769961
 Number of steps: 67108864 result : 4500.08701377158
