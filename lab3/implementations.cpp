@@ -348,6 +348,8 @@ Result locks_implementation(double a, double b, double eps, int thread_number) {
         }
     }
 
+    omp_destroy_lock(&writelock);
+
     step_number = curr_step_number;
 
     finish = omp_get_wtime();

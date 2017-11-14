@@ -9,7 +9,7 @@ Serial scalar time: 0.0002860569948
 7 threads' time: 9.355899965e-05
 8 threads' time: 0.0002297839965
 
-Vector size : 1000000
+Vector size : 1 000 000
 Serial scalar time: 0.003042302
 1 threads' time: 0.003476111
 2 threads' time: 0.001375237996
@@ -20,7 +20,7 @@ Serial scalar time: 0.003042302
 7 threads' time: 0.001201092004
 8 threads' time: 0.003997952001
 
-Vector size : 10000000
+Vector size : 10 000 000
 Serial scalar time: 0.028343881
 1 threads' time: 0.02745759401
 2 threads' time: 0.012873028
@@ -29,9 +29,9 @@ Serial scalar time: 0.028343881
 5 threads' time: 0.009598892
 6 threads' time: 0.008661418004
 7 threads' time: 0.007471148005
-8 threads' time: 0.041986908
+8 threads' time: 0.006604839997
 
-Vector size : 100000000
+Vector size : 100 000 000
 Serial scalar time: 0.251487882
 1 threads' time: 0.248785045
 2 threads' time: 0.1308034
@@ -42,7 +42,7 @@ Serial scalar time: 0.251487882
 7 threads' time: 0.078000939
 8 threads' time: 0.074743077
 
-Vector size : 1000000000
+Vector size : 1 000 000 000
 Serial scalar time: 2.23764949
 1 threads' time: 2.407025107
 2 threads' time: 1.296723904
@@ -53,7 +53,7 @@ Serial scalar time: 2.23764949
 7 threads' time: 0.711661084
 8 threads' time: 0.692740779
 
-Vector size : 1500000000
+Vector size : 1 500 000 000
 Serial scalar time: 3.337076227
 1 threads' time: 3.574575751
 2 threads' time: 1.948302407
