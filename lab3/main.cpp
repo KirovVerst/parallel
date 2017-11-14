@@ -20,39 +20,39 @@ Points POINTS[]{
 
 int MAX_THREAD_NUMBER = omp_get_max_threads();
 
-void parallel_implementations(Points &dots, double eps, ofstream &out) {
+void parallel_implementations(Points &dots, double eps) {
     Result result;
 
-    out << "\n<----------Reduction method---------->" << endl;
-    for (int i = 2; i <= MAX_THREAD_NUMBER; i++) {
+    cout << "\n<----------Reduction method---------->" << endl;
+    for (int i = 1; i <= 1; i++) {
         result = reduction_implementation(dots.first, dots.second, eps, i);
-        out << result.thread_number << " threads' time: " << result.time << endl;
+        cout << result.thread_number << " threads' time: " << result.time << endl;
     }
-    out << "Step number: " << result.step_number << endl;
+    cout << "Step number: " << result.step_number << endl;
     cout << "Reduction completed" << endl;
 
-    out << "\n<----------Atomic method---------->" << endl;
-    for (int i = 2; i <= MAX_THREAD_NUMBER; i++) {
+    cout << "\n<----------Atomic method---------->" << endl;
+    for (int i = 1; i <= 1; i++) {
         result = atomic_implementation(dots.first, dots.second, eps, i);
-        out << result.thread_number << " threads' time: " << result.time << endl;
+        cout << result.thread_number << " threads' time: " << result.time << endl;
     }
-    out << "Step number: " << result.step_number << endl;
+    cout << "Step number: " << result.step_number << endl;
     cout << "Atomic completed" << endl;
 
-    out << "\n<----------Critical method---------->" << endl;
-    for (int i = 2; i <= MAX_THREAD_NUMBER; i++) {
+    cout << "\n<----------Critical method---------->" << endl;
+    for (int i = 1; i <= 1; i++) {
         result = critical_implementation(dots.first, dots.second, eps, i);
-        out << result.thread_number << " threads' time: " << result.time << endl;
+        cout << result.thread_number << " threads' time: " << result.time << endl;
     }
-    out << "Step number: " << result.step_number << endl;
+    cout << "Step number: " << result.step_number << endl;
     cout << "Critical completed" << endl;
 
-    out << "\n<----------Locks method---------->" << endl;
-    for (int i = 2; i <= MAX_THREAD_NUMBER; i++) {
+    cout << "\n<----------Locks method---------->" << endl;
+    for (int i = 1; i <= 1; i++) {
         result = locks_implementation(dots.first, dots.second, eps, i);
-        out << result.thread_number << " threads' time: " << result.time << endl;
+        cout << result.thread_number << " threads' time: " << result.time << endl;
     }
-    out << "Step number: " << result.step_number << endl;
+    cout << "Step number: " << result.step_number << endl;
     cout << "Locks completed" << endl;
 }
 
@@ -65,16 +65,18 @@ void run_own_experiment() {
     for (Points &dots: POINTS) {
         cout << endl << dots.first << " " << dots.second << endl;
 
-        ofstream log_file;
-        log_file.open(to_string(dots.first) + ".txt");
-        log_file << "\nA = " << dots.first << " " << "\tB = " << dots.second << "\tEps = " << eps << endl << endl;
-        log_file << "Real value: " << J(dots.first, dots.second) << endl;
+        //ofstream log_file;
+        //log_file.open(to_string(dots.first) + ".txt");
+        cout << "\nA = " << dots.first << " " << "\tB = " << dots.second << "\tEps = " << eps << endl << endl;
+
+        parallel_implementations(dots, eps);
+/*
+        cout << "Real value: " << J(dots.first, dots.second) << endl;
         result = serial_implementation(dots.first, dots.second, eps);
         cout << "Serial completed" << endl;
-        log_file << endl;
-        log_file << result.thread_number << " threads' time: " << result.time << endl;
-
-        parallel_implementations(dots, eps, log_file);
+        cout << endl;
+        cout << result.thread_number << " threads' time: " << result.time << endl;
+        */
     }
 }
 
@@ -98,7 +100,7 @@ void run_task() {
 int main() {
     cout.precision(15);
 
-    run_task();
+    run_own_experiment();
 
     return 0;
 }

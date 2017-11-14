@@ -6,6 +6,7 @@ Real value: 449.549
 1 threads' time: 0.200115
 
 <----------Reduction method---------->
+1 threads' time: 0.258229166000092
 2 threads' time: 0.136464
 3 threads' time: 0.0922284
 4 threads' time: 0.0698138
@@ -16,6 +17,7 @@ Real value: 449.549
 Step number: 2097152
 
 <----------Atomic method---------->
+1 threads' time: 0.251641952003411
 2 threads' time: 0.224026
 3 threads' time: 0.258847
 4 threads' time: 0.296965
@@ -26,6 +28,7 @@ Step number: 2097152
 Step number: 2097152
 
 <----------Critical method---------->
+1 threads' time: 0.259939512994606
 2 threads' time: 0.281625
 3 threads' time: 0.349881
 4 threads' time: 0.455064
@@ -36,6 +39,7 @@ Step number: 2097152
 Step number: 2097152
 
 <----------Locks method---------->
+1 threads' time: 0.258018068001547
 2 threads' time: 0.287852
 3 threads' time: 0.386727
 4 threads' time: 0.532474

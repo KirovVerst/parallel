@@ -62,7 +62,7 @@ void vector_task_run() {
 
         cout << "Serial scalar time: " << finish - start << endl;
 
-        for (int thread_number = 1; thread_number <= MAX_THREAD_NUMBER; thread_number++) {
+        for (int thread_number = 8; thread_number <= MAX_THREAD_NUMBER; thread_number++) {
             start = omp_get_wtime();
 
             parallel_scalar_multiplication(v1, v2, vector_size, thread_number, result);
