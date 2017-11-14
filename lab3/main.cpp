@@ -86,12 +86,12 @@ void run_task() {
     double b[] = {1e-4, 1e-3, 1e-2, 1e-1, 1, 10, 100};
     double eps[] = {2.77e-11, 1.9e-10, 2.05e-11, 2.22e-12, 8.67e-11, 6e-11, 6.3e-11};
 
-    cout << "Atomic" << endl;
+    cout << "Critical" << endl;
 
-    for (int i = 1; i < n; i++) {
+    for (int i = 0; i < 1; i++) {
         double current_eps = eps[i];
         cout << "a = " << a[i] << " b = " << b[i] << " eps = " << current_eps << endl;
-        Result result = atomic_implementation_for_task(a[i], b[i], current_eps, 8);
+        Result result = critical_implementation_for_task(a[i], b[i], current_eps, 8);
         result.show();
         cout << endl;
     }
@@ -100,7 +100,7 @@ void run_task() {
 int main() {
     cout.precision(15);
 
-    run_own_experiment();
+    run_task();
 
     return 0;
 }
